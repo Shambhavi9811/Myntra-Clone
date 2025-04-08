@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/Shambhavi/Desktop/WISE%20WALLET/index1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./Expense Tracker_files/style.css">
+  </head>
+  <body>
+    <h2>Expense Tracker</h2>
+    <div class="container">
+      <h4>Your Balance</h4>
+      <h1 id="balance">$102999.00</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money-plus">$103000.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money-minus">$1.00</p>
+        </div>
+      </div>
+
+      <h3>History</h3>
+      <ul id="list" class="list"><li class="plus">
+      salary <span>+80000</span>
+      <button class="delete-btn" onclick="removeTransaction(123860914)">x</button>
+      </li><li class="plus">
+      House rent <span>+10000</span>
+      <button class="delete-btn" onclick="removeTransaction(768601938)">x</button>
+      </li><li class="plus">
+      shares <span>+8000</span>
+      <button class="delete-btn" onclick="removeTransaction(705413155)">x</button>
+      </li><li class="plus">
+      shopping <span>+5000</span>
+      <button class="delete-btn" onclick="removeTransaction(67270801)">x</button>
+      </li><li class="minus">
+      shares <span>-1</span>
+      <button class="delete-btn" onclick="removeTransaction(732418789)">x</button>
+      </li></ul>
+      <h3>Add New Transition</h3>
+      <form id="form">
+          <div class="form-control">
+              <label for="text">Text</label>
+              <input type="text" id="text" placeholder="Enter Text....">
+          </div>
+          <div class="form-control">
+              <label for="amount">Amount <br> (negative - expense ,positive - income )</label>
+              <input type="number" id="amount" placeholder="Enter amount..."> 
+          </div>
+          <button class="btn">All transaction</button>
+      </form>
+    </div>
+    <!-- JavaYscript Project  -->
+    <script src="./Expense Tracker_files/script.js"></script>
+  
+</body></html>
